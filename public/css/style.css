@@ -1,60 +1,152 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-html {
-    height: 100%;
-}
+
 body {
-    box-sizing: border-box;
-    background-color: #ccddf7;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    font-size: 16px;
+    font-family: 'LunchType-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
 }
-.cube{
+.section {
+    min-height: 100vh; /*full height of the view page*/
+    display: flex;
     position: relative;
+}
+.section-pad {
+    padding: 0 5vw; /*5% of the width of the page*/
+}
+.container {
+    max-width: 810px;
+    /* center content combine with display flex on section*/
+    margin:auto;
+}
+.intro{
+    background-image: url('/Users/lucieletouze/Projets/Cours/SuperHi/fifty-festival/public/assets/images/intro.jpg');
+    color: #fff;
+}
+.intro p {
+    font-size: 36px;
+    line-height: 1.2;
+}
+.logo {
+    display: block;
     text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
+    max-width: 112px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo img {
+    width: 100%;
+}
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#canvas {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 606px;
-  height: 605px;
-  border: 1px solid #ccddf7;
-  background-color: #ccddf7; }
-  #canvas #windiv {
-    display: none; }
-  #canvas .banner {
-    width: 370px;
-    font-size: 50px;
-    background-color: #f5f5dc;
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100% {
+        opacity:1;
+    }
+}
+.appear {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    /* make sure end state stays the same */
+    animation-fill-mode: forwards;
+}
+.difference {
+    mix-blend-mode: difference;
+}
+.marquee {
+    position: absolute;
+    top: 3vh;
+    left: 0;
+    width: 100%;
+    /* each letter will be 5% of the viewport width */
+    font-size: 5vw;
+    line-height: 1;
+    overflow: hidden;
+}
+
+@keyframes moveLeft {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-300vw);
+    }
+}
+.marquee span {
+    /* */
+    animation: moveLeft 50s linear infinite;
+    /* this ensure text stay all on the same line */
+    white-space: nowrap;
+    /* our spanis inline by default, so we out it block */
+    display: block;
+    /* this will let us add our animation */
     position: relative;
+}
+.day {
+    position: relative;
+    /*shapes would be relative to day section*/
+}
+.day .container{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    /*shapes would be relative to day section*/
+}
+.day-1{
+    background-color: #fd76a7;
+}
+.day-2{
+    background-color: #1bb190;
+    overflow: hidden;
+}
+.day-3{
+    background-image: url('/Users/lucieletouze/Projets/Cours/SuperHi/fifty-festival/public/assets/images/day-3.jpg');
+}
+.center {
     text-align: center;
-    top: -60px;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.55);
-    left: -15px;
-    z-index: 2; }
-  #canvas .innerSquare {
-    width: 200px;
-    height: 200px;
-    float: left; }
-    #canvas .innerSquare.imageSquare {
-      font-size: 24px;
-      text-align: center;
-      border: 1px solid  #ccddf7; }
-      #canvas .innerSquare.imageSquare:hover {
-        background-color: lightgray; }
-    #canvas .innerSquare.clickable:hover {
-      opacity: 0.4;
-      filter: alpha(opacity=40); }
-    #canvas .innerSquare.blank {
-      border: 1px solid #f5f5dc; }
+}
+.date {
+    font-size: 28px;
+    color: #ffeecf;
+    margin-bottom: 48px;
+    line-height: 1;
+}
+.lineup h2 {
+    font-size: 56px;
+    margin-bottom: 6px;
+    line-height: 1;
+}
+.lineup p {
+    font-size: 29px;
+    margin-bottom: 26px;
+    line-height: 1;
+}
+
+.scroll-to {
+    position: absolute;
+    bottom: 3vh;
+    left: 50%;
+    width: 64px;
+    height: 32px;
+    background-image: url('/Users/lucieletouze/Projets/Cours/SuperHi/fifty-festival/public/assets/images/down-arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transform: translateX(-50%);
+}
+.scroll-to-intro {
+    background-image: url('/Users/lucieletouze/Projets/Cours/SuperHi/fifty-festival/public/assets/images/down-arrow-light.svg');
+}

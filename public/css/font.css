@@ -1,56 +1,20 @@
 @font-face {
-    font-family: 'noedisplay-regular';
-    src: url('/font/noe-display-regular.eot');
-    src: url('/font/noe-display-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'LunchType-Regular';
+  src: url('/Users/lucieletouze/Projets/Cours/SuperHi/fifty-festival/public/assets/fonts/lunchtype22-regular-webfont.woff2') format('woff2'),
+       url('/Users/lucieletouze/Projets/Cours/SuperHi/fifty-festival/public/assets/fonts/lunchtype22-regular-webfont.woff') format('woff'),
+       url('/Users/lucieletouze/Projets/Cours/SuperHi/fifty-festival/public/assets/fonts/lunchtype22-regular-webfont.ttf') format('truetype');
 }
+
 @font-face {
-    font-family: 'noedisplay-regular-italic';
-    src: url('/font/noe-display-regular-italic.eot');
-    src: url('/font/noe-display-regular-italic.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'LunchType-Medium';
+  src: url('/Users/lucieletouze/Projets/Cours/SuperHi/fifty-festival/public/assets/fonts/lunchtype24-medium-expanded-webfont.woff2') format('woff2'),
+       url('/Users/lucieletouze/Projets/Cours/SuperHi/fifty-festival/public/assets/fonts/lunchtype24-medium-expanded-webfont.woff') format('woff'),
+       url('/Users/lucieletouze/Projets/Cours/SuperHi/fifty-festival/public/assets/fonts/lunchtype24-medium-expanded-webfont.ttf') format('truetype');
 }
-@font-face {
-    font-family: 'noedisplay-medium';
-    src: url('/font/noe-display-medium.eot');
-    src: url('/font/noe-display-medium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'noedisplay-medium-italic';
-    src: url('/font/noe-display-medium-italic.eot');
-    src: url('/font/noe-display-medium-italic.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'noedisplay-bold';
-    src: url('/font/noe-display-bold.eot');
-    src: url('/font/noe-display-bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'noedisplay-bold-italic';
-    src: url('/font/noe-display-bold-italic.eot');
-    src: url('/font/noe-display-bold-italic.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'noedisplay-black';
-    src: url('/font/noe-display-black.eot');
-    src: url('/font/noe-display-black.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'noedisplay-black-italic';
-    src: url('/font/noe-display-black-italic.eot');
-    src: url('/font/noe-display-black-italic.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+
+.marquee,
+.lunch-medium,
+.date,
+.lineup h2 {
+     font-family: 'LunchType-Medium', sans-serif;
 }

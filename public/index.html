@@ -1,15 +1,264 @@
 <!DOCTYPE html>
+<!--
+
+
+****
+****
+****
+****
+****  ************
+****  ***********
+****        ****
+****      ****
+****     ****
+****   ****   ****
+ ********   ******
+
+ ** Allo,
+** Bienvenue dans mon code,
+ ** Soyez indulgent ;)
+
+
+-->
+
 <html>
-<head>
-  <title>deuxmilledixsept</title>
-  <link type="text/css" rel="stylesheet" href="/css/style.css"/>
-  <link type="text/css" rel="stylesheet" href="/css/font.css"/>
-</head>
-<body>
-    <main class="cube">
-    		<div id="canvas"></div>
-    </main>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script type="text/javascript" src="/script2.js"></script>
+    <head>
+        <!-- META STUFF-->
+        <meta charset="utf-8" />
+        <title>FIFTY festival</title>
+        <meta name="description" content="Fake website to learn to code - week 1">
+        <meta name="keywords" content="design, web, css, interactif, learning, javascript, animation, scroll" />
+        <meta name="author" content="Lucie Le Touze" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- LINKS -->
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type="text/css" rel="stylesheet" href="css/font.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/shapes.css">
+        <link type="text/css" rel="stylesheet" href="css/viewport.css">
+        <!-- SCRIPTS -->
+    </head>
+    <body>
+        <section class="intro section section-pad bg-cover" id="intro">
+
+          <div class="copy container">
+            <a class="logo appear">
+              <img src="assets/images/logo.svg">
+            </a>
+            <div class="marquee difference">
+              <span>FIFTY Music Festival — November 10–12, Desert Valley</span>
+            </div>
+            <div class="difference appear">
+
+              <p>
+                Held in the beautiful San Bernadino, CA, the first annual FIFTY Music Festival is an unmissable event. Over the course of
+                3 days, we invite the rising stars in music from 50 different countries all over the world for a unique, cultural
+                extravaganza.
+              </p>
+            </div>
+          </div>
+          <a href="#day-1" class="js-scroll scroll-to scroll-to-intro"></a>
+        </section>
+
+        <section class="section section-pad day day-1" id="day-1">
+          <div class="container center">
+            <h3 class="date">
+              Friday Nov 10
+            </h3>
+            <ul class="lineup">
+              <li>
+                <h2>
+                  Natti Natasha
+                </h2>
+                <p>
+                  Argentina
+                </p>
+              </li>
+
+              <li>
+                <h2>
+                  Post Malone
+                </h2>
+                <p>
+                  United States
+                </p>
+              </li>
+              <li>
+                <h2>
+                  Shirley Setia
+                </h2>
+                <p>
+                  New Zealand / India
+                </p>
+              </li>
+              <li>
+                <h2>
+                  Axwell /\ Ingrosso
+                </h2>
+                <p>
+                  Sweden
+                </p>
+              </li>
+              <li>
+                <p>
+                  …and more TBA
+                </p>
+              </li>
+            </ul>
+          </div>
+          <span class="shape circle"></span>
+          <span class="shape circle"></span>
+          <span class="shape circle"></span>
+          <span class="shape circle"></span>
+          <span class="shape circle"></span>
+          <span class="shape circle"></span>
+          <span class="shape circle"></span>
+          <span class="shape circle"></span>
+
+          <a href="#day-2" class="js-scroll scroll-to"></a>
+
+        </section>
+
+        <section class="section section-pad day day-2" id="day-2">
+          <div class="container center">
+            <h3 class="date">
+              Saturday Nov 11
+            </h3>
+            <ul class="lineup">
+              <li>
+                <h2>
+                  Kyary Pamyu Pamyu
+                </h2>
+                <p>
+                  Japan
+                </p>
+              </li>
+              <li>
+                <h2>
+                  Stella Mwangi
+                </h2>
+                <p>
+                  Kenya / Norway
+                </p>
+              </li>
+              <li>
+                <h2>
+                  Wizkid
+                </h2>
+                <p>
+                  Nigeria
+                </p>
+              </li>
+              <li>
+                <h2>
+                  Stormzy
+                </h2>
+                <p>
+                  UK
+                </p>
+              </li>
+              <li>
+                <p>
+                  …and more TBA
+                </p>
+              </li>
+            </ul>
+          </div>
+          <span class="shape squiggle"></span>
+          <span class="shape squiggle"></span>
+          <span class="shape squiggle"></span>
+          <span class="shape squiggle"></span>
+          <span class="shape squiggle"></span>
+          <span class="shape squiggle"></span>
+          <span class="shape squiggle"></span>
+          <span class="shape squiggle"></span>
+          <a href="#day-3" class="js-scroll scroll-to"></a>
+
+        </section>
+
+        <section class="section section-pad day day-3  bg-cover" id="day-3">
+          <div class="container center">
+            <h3 class="date">
+              Sunday Nov 12
+            </h3>
+            <ul class="lineup">
+              <li>
+                <h2>
+                  Swet Shop Boys
+                </h2>
+                <p>
+                  UK / US
+                </p>
+              </li>
+              <li>
+                <h2>
+                  Christine and the Queens
+                </h2>
+                <p>
+                  France
+                </p>
+              </li>
+              <li>
+                <h2>
+                  Ryan McGeady
+                </h2>
+                <p>
+                  Scotland
+                </p>
+              </li>
+              <li>
+                <h2>
+                  Die Antwoord
+                </h2>
+                <p>
+                  South Africa
+                </p>
+              </li>
+              <li>
+                <p>
+                  …and more TBA
+                </p>
+              </li>
+            </ul>
+          </div>
+          <a href="#register" class="js-scroll scroll-to"></a>
+        </section>
+
+        <section class="section" id="register">
+          <div class="register section-pad">
+            <div class="container">
+              <div class="eyes"></div>
+              <div class="form">
+                <h2 class="lunch-medium">
+                  Register for festival updates
+                </h2>
+                <form action="" method="post" id="subForm" class="sign-up">
+                  <input placeholder="Enter your email" id="fieldEmail" name="" type="email" required class="email-input">
+                  <input type="submit" value="Submit" class="submit">
+                </form>
+              </div>
+              <div class="hand"></div>
+            </div>
+
+          </div>
+          <footer class="footer section-pad">
+            <div class="container">
+              <img src="assets/images/logo.svg">
+              <p>
+                <a class="js-scroll button" href="#intro">
+                  ↑ Back to top
+                </a>
+              </p>
+            </div>
+
+          </footer>
+
+        </section>
+        <!-- SCRIPT -->
+        <script src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script>
+        <!-- If async is present: The script is executed asynchronously with the rest of the page (the script will be executed while the page continues the parsing)
+If async is not present and defer is present: The script is executed when the page has finished parsing
+If neither async or defer is present: The script is fetched and executed immediately, before the browser continues parsing the page-->
+        <script type="text/javascript" src="script/main.js" async></script>
+    </body>
 </html>
