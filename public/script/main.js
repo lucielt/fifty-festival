@@ -93,7 +93,7 @@ inView.threshold(0.5);
  // make sure our shapes only fade in after our artists
  const sections = document.querySelectorAll('.section');
  sections.forEach((section, index) => {
- // fin element inside section vs inside the page
+        // find element inside section vs inside the page
         const artists = section.querySelectorAll('.lineup li');
         const shapes = section.querySelectorAll('.shape');
         console.log(artists, shapes);
