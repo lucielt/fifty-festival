@@ -58,7 +58,7 @@ body {
     opacity: 0;
     animation-name: fadeIn;
     animation-duration: 3s;
-    animation-delay: 2s;
+    animation-delay: 0.5s;
     /* make sure end state stays the same */
     animation-fill-mode: forwards;
 }
@@ -144,7 +144,6 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-
     transform: translateX(-50%);
 }
 .scroll-to-intro {
